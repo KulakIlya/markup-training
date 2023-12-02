@@ -4,13 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Приватна школа</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="main-header">
       <div class="container">
         <nav class="page-nav">
           <a href="" class="logo"
-            >Приватна школа Олени Вєдєрнікової
+            ><span class="logo-text">Приватна школа Олени Вєдєрнікової</span>
             <svg class="icon" width="29" height="29">
               <use href="./images/icons.svg#icon-logo"></use></svg
           ></a>
@@ -20,11 +35,8 @@
             </svg>
           </button>
         </nav>
-        <div>
-          <p>
-            <strong>Головна сторінка</strong>
-            <span class="vertical-line">|</span> Ковід
-          </p>
+        <div class="page-info">
+          <p><strong class="current-page">Головна сторінка</strong>Ковід</p>
         </div>
       </div>
     </header>
@@ -34,16 +46,16 @@
           <h1 class="main-title section-title">
             Успішне майбутнє починається в школі
           </h1>
-          <p>
+          <p class="section-text">
             Surrounded by New Hampshire’s lakes and White Mountains, Holderness
             School is a New Hampshire boarding and day school of joyful
             learners, adventurers, artists, advocates, and athletes. Holderness
             is more than a school, it’s an elevated experience.
           </p>
-          <button type="button">Записатися</button>
+          <button class="btn" type="button">Записатися</button>
         </div>
       </section>
-      <section class="about">
+      <!-- <section class="about">
         <div class="container">
           <h2 class="section-title">
             Допомагаємо дітям самостійно досліджувати світ і себе в ньому
@@ -351,9 +363,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="main-footer">
+    <!-- <footer class="main-footer">
       <div class="container">
         <div>
           <a href="" class="logo">EV School</a>
@@ -467,6 +479,6 @@
         <p>Договір аферти</p>
         <p>Усі права є захищеними EV School 2021.</p>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>
