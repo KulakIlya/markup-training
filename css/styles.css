@@ -5,6 +5,12 @@
   --accent-color: #883cda;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.33;
@@ -43,6 +49,15 @@ ul {
 a {
   color: currentColor;
   text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+input::placeholder {
+  color: #a5a5a9;
+  font-size: 16px;
 }
 
 .container {
@@ -105,11 +120,27 @@ a {
   align-items: center;
 }
 
+.slider-list {
+  overflow: hidden;
+
+  display: flex;
+  /* gap: 16px; */
+}
+
 .slider-item {
   padding: 32px 24px;
+  /* transform: translateX(507px); */
 
   border-radius: 15px;
   box-shadow: -8px 10px 23px 0px #f1f1f1, 8px -10px 23px 0px #f1f1f1;
+}
+
+.slider-list .slider-item {
+  /* -340px every slide */
+  /* transform: translateX(167px);
+  transform: translateX(-173px); */
+
+  /* margin-right: 16px; */
 }
 
 .controls-list {
@@ -217,6 +248,16 @@ a {
   border: 1px solid var(--accent-color);
 }
 
+.examples-list {
+  gap: 16px;
+}
+
+.examples-list .slider-item {
+  width: 328px;
+  /* -50% every slide */
+  transform: translateX(50%);
+}
+
 /* Features section */
 
 .features {
@@ -322,11 +363,6 @@ a {
   box-shadow: -8px 10px 23px 0px #f1f1f1, 8px -10px 23px 0px #f1f1f1;
 }
 
-.form-label input::placeholder {
-  color: #a5a5a9;
-  font-size: 16px;
-}
-
 .form-section .btn {
   margin-top: 48px;
 }
@@ -337,10 +373,34 @@ a {
   margin-bottom: 24px;
 }
 
+.advantages-list img {
+  margin: 0 auto;
+}
+
+.advantages-list {
+  overflow-x: hidden;
+
+  display: flex;
+  gap: 16px;
+}
+
+.advantages-list .slider-item {
+  /* -340px every slide */
+  transform: translateX(507px);
+  /* transform: translateX(167px); */
+  /* transform: translateX(-173px); */
+}
+
 /* Last section */
 
 .articles {
   padding-bottom: 56px;
+}
+
+.articles-list .slider-item {
+  transform: translateX(100%);
+
+  width: 318px;
 }
 
 .articles .item-title {
@@ -357,4 +417,92 @@ a {
 .main-footer {
   background-color: var(--black);
   color: var(--white);
+  padding: 46px 0 87px;
+}
+
+.main-footer .logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.social-list {
+  margin-top: 33px;
+  display: flex;
+  gap: 18px;
+}
+
+.form-wrapper {
+  position: relative;
+  margin-top: 42px;
+}
+
+.form-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.subscribe-form .form-input {
+  border-radius: 35px;
+  width: 100%;
+  padding: 16px 12px 13px;
+  border: 1px solid transparent;
+}
+
+.subscribe-form .btn {
+  /* max-height: 100%; */
+  position: absolute;
+  right: 0;
+}
+
+.footer-info {
+  padding-top: 24px;
+  padding-bottom: 21px;
+  border-bottom: 1px solid var(--white);
+}
+
+.footer-info:first-of-type {
+  padding-top: 0;
+}
+
+.address {
+  margin-top: 56px;
+}
+
+.footer-title {
+  margin-bottom: 24px;
+
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.main-footer .item-title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.45;
+  margin-bottom: 19px;
+}
+
+.footer-list .item:not(:last-child) {
+  margin-bottom: 21px;
+}
+
+.footer-list .footer-title:last-child {
+  margin-bottom: 0;
+}
+
+.address-info {
+  margin-top: 46px;
+}
+
+.about-school-list .item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.copyright {
+  padding-top: 40px;
+}
+
+.copyright p + p {
+  margin-top: 12px;
 }
